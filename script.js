@@ -65,7 +65,7 @@ const quantityInput = document.getElementById('quantity');
                 }
 
                 function calculatePrice() {
-                    // Проверка, что количество валидно
+                    // Проверка, что количество верно
                     if (!validateQuantity()) {
                         resultDiv.textContent = ``;
                         return; // Не выполнять расчет, если количество некорректно
