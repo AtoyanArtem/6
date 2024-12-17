@@ -11,9 +11,9 @@
 
     <h1>Калькулятор стоимости заказа</h1>
     <form id="order-form">
-    <label><input type="radio" name="service-type" value="type1" checked> Тип 1 (без опций и свойств)</label><br>
-    <label><input type="radio" name="service-type" value="type2"> Тип 2 (с опциями)</label><br>
-    <label><input type="radio" name="service-type" value="type3"> Тип 3 (со свойством)</label><br>
+    <label><input type="radio" name="service-type" value="type1" checked> Артикул 1 (без опций и свойств)</label><br>
+    <label><input type="radio" name="service-type" value="type2"> Артикул 2 (с опциями)</label><br>
+    <label><input type="radio" name="service-type" value="type3"> Артикул 3 (со свойством)</label><br>
     
     <br><br> 
 
@@ -29,9 +29,9 @@
         <div id="options-container" style="display: none;">
         <label for="product-option">Выберите опцию товара:</label>
         <select id="product-option" name="product-option">
-        <option value="50">Маленький</option>
+        <option value="50">Минимальный</option>
         <option value="100">Средний</option>
-        <option value="200">Большой</option>
+        <option value="200">Максимальный</option>
         </select>
          </div>
         <br><br>
@@ -40,15 +40,9 @@
         <p>Выберите дополнительные свойства товара:</p>
         <label>
         <input type="checkbox" name="product-feature" value="gift-wrap">
-         Подарочная упаковка
+         Доставка
         </label><br>
          </div>
-
-        <!-- Кнопка для подсчета стоимости -->
-        <button type="submit">Рассчитать стоимость</button>
-    </form>
-
-    <h2 id="result"></h2>
 
 </body>
 </html>
